@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>สั่งซื้อสินค้า | Honey Bloom</title>
+<meta name="description" content="กรอกรายละเอียดเพื่อสั่งซื้อน้ำผึ้ง Honey Bloom">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+Thai:wght@400;500;600&family=Noto+Serif+Thai:wght@500;600;700&display=swap">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <a class="brand" href="index.html">Honey Bloom</a>
+  <nav class="site-nav" aria-label="เมนูหลัก">
+    <a href="index.html">หน้าแรก</a>
+    <a href="product.html">สินค้า</a>
+  </nav>
+</header>
+
+<main class="page-order">
+
+  <section class="page-head">
+    <h1 class="page-title">สั่งซื้อสินค้า</h1>
+    <p class="page-intro">กรอกรายละเอียดด้านล่าง เราจะติดต่อกลับทางเบอร์โทรหรือ Line เพื่อยืนยันคำสั่งซื้อ</p>
+  </section>
+
+  <form id="orderForm" class="order-form">
+
+    <div class="form-field">
+      <label for="customerName">ชื่อลูกค้า</label>
+      <input type="text" id="customerName" name="customerName" autocomplete="name" required>
+    </div>
+
+    <div class="form-field">
+      <label for="contact">เบอร์โทร / Line</label>
+      <input type="text" id="contact" name="contact" required>
+    </div>
+
+    <div class="form-field">
+      <label for="items">รายการสินค้า</label>
+      <textarea id="items" name="items" rows="3" required></textarea>
+    </div>
+
+    <div class="form-field">
+      <label for="total">จำนวนเงินรวม (บาท)</label>
+      <input type="number" id="total" name="total" min="0" inputmode="numeric" required>
+    </div>
+
+    <div class="form-field">
+      <label for="note">หมายเหตุ <span class="optional">(ไม่บังคับ)</span></label>
+      <textarea id="note" name="note" rows="3"></textarea>
+    </div>
+
+    <button type="submit" class="btn-outline btn-submit">ยืนยันสั่งซื้อ</button>
+
+    <p class="form-back"><a href="product.html">← กลับไปเลือกสินค้า</a></p>
+
+  </form>
+
+</main>
+
+<footer class="site-footer">
+  <p>© Honey Bloom</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
